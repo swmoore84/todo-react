@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function FilterButton(props) {
   return (
@@ -14,5 +15,13 @@ function FilterButton(props) {
     </button>
   );
 }
+
+FilterButton.propTypes = {
+  name: PropTypes.string
+}
+
+FilterButton.defaultProps = {
+  name: 'Button Name'
+};
 
 export default FilterButton;
